@@ -6,7 +6,7 @@
 
 ## 📊 Dashboard Preview
 
-![Pizza Sales Dashboard](./dashboard_screenshot.png)
+![Pizza Sales Dashboard](images/dashboard.png)
 
 > *Main dashboard showing key KPIs and visual breakdowns*
 
