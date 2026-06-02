@@ -32,7 +32,7 @@ Overview of all KPIs with monthly revenue & quantity trends, category earnings, 
 ![Main Dashboard](images/dashboard.png)
 
 ### 2. Category Details
-Drill-through page showing detailed breakdown by pizza category with top earning pizza per category.
+Drill- through page showing detailed breakdown by pizza category with top earning pizza per category.
 
 ![Category Drill-through](images/dril_through.png)
 
@@ -59,7 +59,7 @@ Monthly revenue breakdown by pizza category with trend line analysis:
 ![Month Details](images/price.png)
 
 ---
-## 🧮 DAX Measures
+## DAX Measures
 
 ### MaxEarnPizza
 Returns the name of the highest earning pizza based on total sales revenue.
@@ -110,7 +110,7 @@ CALCULATE (
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
@@ -120,9 +120,9 @@ CALCULATE (
 
 ---
 
-## 📂 Features
+## Features
 
-- ✅ Interactive **Month Slicer** — filter any range from Jan (1) to Dec (12)
+- ✅ Interactive **Month Slicer** - filter any range from Jan (1) to Dec (12)
 - ✅ **Drill-through** pages for deep-dive analysis by category, size, and month
 - ✅ KPI cards for quick metrics overview
 - ✅ Bar charts, line charts, donut charts
@@ -130,7 +130,7 @@ CALCULATE (
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 1. Download the `.pbix` file from this repository
 2. Open with **Power BI Desktop** (free download at [powerbi.microsoft.com](https://powerbi.microsoft.com))
@@ -144,11 +144,11 @@ CALCULATE (
 
 ▶ Click the image above to watch the dashboard demo.
 
-## 📄 Dashboard Report
+## Dashboard Report
 
 For a static view of the complete dashboard, a PDF export is available:
 
-📄 [View Dashboard PDF](./power_Bi_s16798.pdf)
+[View Dashboard PDF](./power_Bi_s16798.pdf)
 
 ## Access to Project Files
 
