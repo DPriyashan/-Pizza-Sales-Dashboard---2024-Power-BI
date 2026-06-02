@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ![Pizza Sales Dashboard](images/dashboard.png)
 
@@ -12,55 +12,108 @@
 
 ---
 
-## 🎯 Key Metrics
+## Key Metrics
 
 | Metric | Value |
 |--------|-------|
-| 💰 Total Revenue | $817.86K |
-| 📦 Total Orders | 48.62K |
-| 🍕 Total Pizza Sold | 50K |
-| 🧾 Pizza Types | 32 |
+| Total Revenue | $817.86K |
+| Total Orders | 48.62K |
+| Total Pizza Sold | 50K |
+| Pizza Types | 32 |
 
 ---
 
-## 📁 Dashboard Pages
+## Dashboard Pages
 
-### 1. 🏠 Main Dashboard
+### 1. Main Dashboard
 Overview of all KPIs with monthly revenue & quantity trends, category earnings, and size distribution.
+
+> 🎛️ **Time Slicer** — The main dashboard includes an interactive **Month Slicer (1–12)** that filters all visuals dynamically. Drag the slider to select any month range and instantly see how revenue, orders, and quantities change across the selected period.
 
 ![Main Dashboard](images/dashboard.png)
 
-### 2. 📋 Category Details
+### 2. Category Details
 Drill-through page showing detailed breakdown by pizza category with top earning pizza per category.
 
-![Category Details](./category_details.png)
+![Category Drill-through](images/dril_through.png)
 
-### 3. 📏 Size Details
+Pizza category detail page:
+
+![Category Details](images/cat_det.png)
+
+### 3. Size Details
 Detailed view of units sold by pizza size with individual pizza performance charts.
 
-![Size Details](./size_details.png)
+![Size Drill-through](images/dril_through_2.png)
 
-### 4. 📅 Month Details
-Monthly revenue breakdown by pizza category with trend line analysis.
+Pizza size detail page:
 
-![Month Details](./month_details.png)
+![Size Details](images/size.png)
+
+### 4. Month Details
+Drill-through page showing detailed monthly breakdown by pizza category.
+
+![Month Drill-through](images/dril_through.png)
+
+Monthly revenue breakdown by pizza category with trend line analysis:
+
+![Month Details](images/price.png)
 
 ---
+## 🧮 DAX Measures
 
-## 🔍 Key Insights
+### MaxEarnPizza
+Returns the name of the highest earning pizza based on total sales revenue.
 
-- **Classic** is the top earning category at **$0.22M**
-- **Large (L)** size is the most popular at **38.24%** of total sales
-- **July** and **May** are the peak revenue months
-- **The Classic Deluxe Pizza** is the top earning individual pizza with **$38.18K** revenue
-- **February** and **October** show the lowest monthly revenue
+```dax
+MaxEarnPizza = 
+CALCULATE (
+    FIRSTNONBLANK ( Sheet1[pizza_name], 1 ),
+    TOPN (
+        1,
+        SUMMARIZE (
+            Sheet1,
+            Sheet1[pizza_name],
+            "TotalEarn", SUM ( Sheet1[total_price] )
+        ),
+        [TotalEarn], DESC
+    )
+)
+```
+
+### MaxEarnPizzaSales
+Returns the total sales revenue of the highest earning pizza.
+
+```dax
+MaxEarnPizzaSales = 
+CALCULATE (
+    SUM ( Sheet1[total_price] ),
+    FILTER (
+        Sheet1,
+        Sheet1[pizza_name] =
+            CALCULATE (
+                FIRSTNONBLANK ( Sheet1[pizza_name], 1 ),
+                TOPN (
+                    1,
+                    SUMMARIZE (
+                        Sheet1,
+                        Sheet1[pizza_name],
+                        "TotalEarn", SUM ( Sheet1[total_price] )
+                    ),
+                    [TotalEarn], DESC
+                )
+            )
+    )
+)
+```
+
+> These two measures work together to dynamically highlight the **top earning pizza** on drill-through pages. When combined with the **Month Slicer**, they update in real time to show the best performer for any selected time period.
 
 ---
 
 ## 🛠️ Tools Used
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
 - **Power BI Desktop** - Dashboard creation & data visualization
 - **DAX** - Custom measures and calculations
@@ -70,11 +123,11 @@ Monthly revenue breakdown by pizza category with trend line analysis.
 
 ## 📂 Features
 
-- ✅ Interactive **month slicer** (filter Jan–Dec)
-- ✅ **Drill-through** pages for deep-dive analysis
+- ✅ Interactive **Month Slicer** — filter any range from Jan (1) to Dec (12)
+- ✅ **Drill-through** pages for deep-dive analysis by category, size, and month
 - ✅ KPI cards for quick metrics overview
 - ✅ Bar charts, line charts, donut charts
-- ✅ Top earning pizza highlights per category
+- ✅ **Dynamic top pizza** highlight using DAX (`MaxEarnPizza` & `MaxEarnPizzaSales`)
 
 ---
 
@@ -82,7 +135,20 @@ Monthly revenue breakdown by pizza category with trend line analysis.
 
 1. Download the `.pbix` file from this repository
 2. Open with **Power BI Desktop** (free download at [powerbi.microsoft.com](https://powerbi.microsoft.com))
-3. Interact with the slicers and drill-through features
+3. Use the **Month Slicer** on the main dashboard to filter by time period
+4. **Right-click** any chart bar → **Drill through** to see detailed pages
+5. Use the **back arrow** (↩) to return to the main dashboard
+
+## 🎬 Dashboard Demo
+
+**Part 1 — Overview & KPIs**
+<video src="https://raw.githubusercontent.com/yourusername/yourrepo/main/videos/Pizza_part1.mp4" controls width="100%"></video>
+
+**Part 2 — Category & Size Details**
+<video src="https://raw.githubusercontent.com/yourusername/yourrepo/main/videos/Pizza_part2.mp4" controls width="100%"></video>
+
+**Part 3 — Monthly Analysis**
+<video src="https://raw.githubusercontent.com/yourusername/yourrepo/main/videos/Pizza_part3.mp4" controls width="100%"></video>
 
 ---
 
@@ -90,9 +156,7 @@ Monthly revenue breakdown by pizza category with trend line analysis.
 
 **Dinusha Priyshan**
 - 📧 dinushapriyshanedu@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/your-profile) *(update with your link)*
-- 🐙 [GitHub](https://github.com/your-username) *(update with your link)*
-
+- 💼 [LinkedIn](https://www.linkedin.com/in/dinusha-priyashan-haputhanthiri-7b35b8379)
 ---
 
-*Built with ❤️ using Power BI Desktop*
+*Built with using Power BI Desktop*
