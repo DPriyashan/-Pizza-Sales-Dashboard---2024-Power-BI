@@ -142,14 +142,13 @@ CALCULATE (
 ## 🎬 Dashboard Demo
 
 **Part 1 — Overview & KPIs**
-<video src="https://raw.githubusercontent.com/yourusername/yourrepo/main/videos/Pizza_part1.mp4" controls width="100%"></video>
+<video src="https://raw.githubusercontent.com/DPriyashan/-Pizza-Sales-Dashboard---2024-Power-BI/main/Pizza_part1.mp4" controls width="100%"></video>
 
 **Part 2 — Category & Size Details**
-<video src="https://raw.githubusercontent.com/yourusername/yourrepo/main/videos/Pizza_part2.mp4" controls width="100%"></video>
+<video src="https://raw.githubusercontent.com/DPriyashan/-Pizza-Sales-Dashboard---2024-Power-BI/main/Pizza_part2.mp4" controls width="100%"></video>
 
 **Part 3 — Monthly Analysis**
-<video src="https://raw.githubusercontent.com/yourusername/yourrepo/main/videos/Pizza_part3.mp4" controls width="100%"></video>
-
+<video src="https://raw.githubusercontent.com/DPriyashan/-Pizza-Sales-Dashboard---2024-Power-BI/main/Pizza_part3.mp4" controls width="100%"></video>
 ---
 
 ## 📧 Contact
