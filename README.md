@@ -139,17 +139,17 @@ CALCULATE (
 4. **Right-click** any chart bar → **Drill through** to see detailed pages
 5. Use the **back arrow** (↩) to return to the main dashboard
 
-## 🎬 Dashboard Demo
+## Power BI Dashboard Demo
 
-**Part 1 — Overview & KPIs**
-<video src="https://raw.githubusercontent.com/DPriyashan/-Pizza-Sales-Dashboard---2024-Power-BI/main/Pizza_part1.mp4" controls width="100%"></video>
+[![Watch Demo](images/dashboard-preview.png)](https://drive.google.com/file/d/1WIV283yPuLmrXpQIlJHKZGtKuk_e1z_5/view?usp=sharing)
 
-**Part 2 — Category & Size Details**
-<video src="https://raw.githubusercontent.com/DPriyashan/-Pizza-Sales-Dashboard---2024-Power-BI/main/Pizza_part2.mp4" controls width="100%"></video>
+▶ Click the image above to watch the dashboard demo.
 
-**Part 3 — Monthly Analysis**
-<video src="https://raw.githubusercontent.com/DPriyashan/-Pizza-Sales-Dashboard---2024-Power-BI/main/Pizza_part3.mp4" controls width="100%"></video>
----
+## Access to Project Files
+
+Due to project and data-sharing considerations, the Power BI (.pbix) file is not publicly available.
+
+A dashboard walkthrough video and screenshots are provided in this repository. Please feel free to contact me if you would like additional details or a live demonstration.
 
 ## 📧 Contact
 
