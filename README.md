@@ -1,8 +1,7 @@
 # 🍕 Pizza Sales Dashboard - 2024
 
-> An interactive Power BI dashboard analyzing pizza sales performance across categories, sizes, and monthly trends.
+An interactive Power BI dashboard analyzing pizza sales performance across categories, sizes, and monthly trends.
 
----
 
 ## Dashboard Preview
 
@@ -144,6 +143,12 @@ CALCULATE (
 [![Watch Demo](images/dashboard-preview.png)](https://drive.google.com/file/d/1WIV283yPuLmrXpQIlJHKZGtKuk_e1z_5/view?usp=sharing)
 
 ▶ Click the image above to watch the dashboard demo.
+
+## 📄 Dashboard Report
+
+For a static view of the complete dashboard, a PDF export is available:
+
+📄 [View Dashboard PDF](./power_Bi_s16798.pdf)
 
 ## Access to Project Files
 
