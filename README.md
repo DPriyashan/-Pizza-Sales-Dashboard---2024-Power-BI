@@ -28,7 +28,7 @@
 ### 1. 🏠 Main Dashboard
 Overview of all KPIs with monthly revenue & quantity trends, category earnings, and size distribution.
 
-![Main Dashboard](./dashboard_screenshot.png)
+![Main Dashboard](images/dashboard.png)
 
 ### 2. 📋 Category Details
 Drill-through page showing detailed breakdown by pizza category with top earning pizza per category.
